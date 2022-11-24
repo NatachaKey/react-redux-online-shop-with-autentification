@@ -12,8 +12,7 @@ const CartItem = ({ cartItem })=> {
     
     <div>
         {/* <img src={`./${cartItem.img}.jpg`} alt="cart item" width="100px"/> */}
-       
-      
+
        <p>{cartItem.name}</p>
        <p>Portion(s): {cartItem.quantity}</p>
        <p>${cartItem.totalPrice}<span onClick={()=>dispatch(removeItemFromCart({cartItemId: cartItem.id}))}>
